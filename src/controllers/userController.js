@@ -13,6 +13,7 @@ const userController = {
                 userCriado
             }); 
         }catch (error) {
+            console.log(error)
             return response.status(500).json({
                 msg: "Ocorreu um erro ao acessar a API"
             })
